@@ -39,7 +39,7 @@ while True:
      
     tcp_header = packet[iph_length:iph_length+20]
      
-    #now unpack them :)
+    #now unpack them
     tcph = unpack('!HHLLBBHHH' , tcp_header)
      
     source_port = tcph[0]
