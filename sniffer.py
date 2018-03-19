@@ -21,7 +21,7 @@ while True:
     #take first 20 characters for the ip header
     ip_header = packet[0:20]
      
-    #now unpack them :)
+    #now unpack them
     iph = unpack('!BBHHHBBH4s4s' , ip_header)
      
     version_ihl = iph[0]
